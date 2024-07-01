@@ -1,0 +1,1 @@
+<img class="preloader__logo w-20" src="{{ asset('assets/images/Homepage/Main Logos/HS Media Group.png') }}" alt="logo">
