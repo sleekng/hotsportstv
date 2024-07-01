@@ -79,7 +79,7 @@
 
                 <div class="bg-gray-100 p-4 rounded-t flex justify-between items-center">
                     <div class="w-1/2 flex items-center">
-                        <input type="checkbox" class="mr-2">
+                    {{--     <input type="checkbox" class="mr-2"> --}}
                         <span class="font-bold">Title</span>
                     </div>
                     <div class="w-1/6"><span class="font-bold">Author</span></div>
@@ -101,7 +101,7 @@
                         <div class=" flex justify-between items-center mt-2 ">
                             <div class="flex w-1/2  items-center mt-2 space-x-4">
                                 <div class="flex space-x-2"> 
-                                    <input type="checkbox" class="mr-2">
+                             {{--        <input type="checkbox" class="mr-2"> --}}
                                 @if ($project->image)
                                     <div class="">
                                         <img src="{{ asset('storage/' . $project->image) }}" alt="Current Image" class="w-20 h-20 mr-4">

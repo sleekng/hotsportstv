@@ -30,15 +30,15 @@
             /* Show actions on hover */
         }
     </style>
-        <script>
-            function confirmDelete(event) {
-                event.preventDefault(); // Prevent the form from submitting immediately
-                const userConfirmed = confirm('Do you really want to delete this category?');
-                if (userConfirmed) {
-                    event.target.submit(); // Submit the form if the user confirmed
-                }
+    <script>
+        function confirmDelete(event) {
+            event.preventDefault(); // Prevent the form from submitting immediately
+            const userConfirmed = confirm('Do you really want to delete this category?');
+            if (userConfirmed) {
+                event.target.submit(); // Submit the form if the user confirmed
             }
-        </script>
+        }
+    </script>
 </head>
 
 <body class="flex w-full">
@@ -59,23 +59,24 @@
                     <a href="{{ route('instagram-posts.create') }}"
                         class="bg-blue-500 text-white px-4 py-2 rounded-lg">Add New</a>
                     <div>
-                        <input type="text" placeholder="Search Instagram Post" class="border p-2 ml-4 rounded-lg" />
+                 {{--        <input type="text" placeholder="Search Instagram Post" class="border p-2 ml-4 rounded-lg" /> --}}
                         <button class="bg-blue-500 text-white px-4 py-2 ml-2 rounded-lg">Search Post</button>
                     </div>
                 </div>
                 <!-- Display Success Message -->
-@if(session('success'))
-<div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
-    <span class="block sm:inline">{{ session('success') }}</span>
-</div>
-@endif
+                @if (session('success'))
+                    <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative"
+                        role="alert">
+                        <span class="block sm:inline">{{ session('success') }}</span>
+                    </div>
+                @endif
 
 
 
                 <div class="bg-gray-100 p-4 rounded-t flex mt-4 justify-between items-center">
                     <div class="w-full flex items-center">
-                      
-                   
+
+
                     </div>
                 </div>
 
@@ -96,16 +97,17 @@
                             <div class="actions ml-6">
                                 <div class="w-full flex mt-2">
                                     <a href="{{ route('instagram-posts.edit', $post->id) }}"
-                                       class="bg-blue-600 text-white px-4 py-2 rounded mr-2 hover:bg-blue-500">Edit</a>
-                                    <form action="{{ route('instagram-posts.destroy', $post->id) }}" method="POST" class="inline-block" onsubmit="confirmDelete(event)">
+                                        class="bg-blue-600 text-white px-4 py-2 rounded mr-2 hover:bg-blue-500">Edit</a>
+                                    <form action="{{ route('instagram-posts.destroy', $post->id) }}" method="POST"
+                                        class="inline-block" onsubmit="confirmDelete(event)">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="bg-red-500 text-white px-4 py-2 rounded">Delete</button>
+                                        <button type="submit"
+                                            class="bg-red-500 text-white px-4 py-2 rounded">Delete</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
-
                     @endforeach
                 @endif
             </div>

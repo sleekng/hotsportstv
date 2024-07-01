@@ -30,15 +30,15 @@
             /* Show actions on hover */
         }
     </style>
-        <script>
-            function confirmDelete(event) {
-                event.preventDefault(); // Prevent the form from submitting immediately
-                const userConfirmed = confirm('Do you really want to delete this?');
-                if (userConfirmed) {
-                    event.target.submit(); // Submit the form if the user confirmed
-                }
+    <script>
+        function confirmDelete(event) {
+            event.preventDefault(); // Prevent the form from submitting immediately
+            const userConfirmed = confirm('Do you really want to delete this?');
+            if (userConfirmed) {
+                event.target.submit(); // Submit the form if the user confirmed
             }
-        </script>
+        }
+    </script>
 </head>
 
 <body class="flex w-full">
@@ -63,11 +63,12 @@
                 </div>
 
                 <!-- Display Success Message -->
-@if(session('success'))
-<div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
-    <span class="block sm:inline">{{ session('success') }}</span>
-</div>
-@endif
+                @if (session('success'))
+                    <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative"
+                        role="alert">
+                        <span class="block sm:inline">{{ session('success') }}</span>
+                    </div>
+                @endif
 
 
 

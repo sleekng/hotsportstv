@@ -78,12 +78,12 @@
                     @csrf
                     @method('DELETE')
 
-                    <div class="mt-4">
+                  {{--   <div class="mt-4">
                         <button type="submit" class="bg-red-500 text-white px-4 py-2 rounded">Delete Selected</button>
-                    </div>
+                    </div> --}}
                     <div class="bg-gray-100 p-4 rounded-t flex mt-4 justify-between items-center">
                         <div class="w-full flex items-center">
-                            <input type="checkbox" onclick="toggleSelectAll(this)" class="mr-2">
+                           {{--  <input type="checkbox" onclick="toggleSelectAll(this)" class="mr-2"> --}}
                             <span class="font-bold">Title</span>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                             <div class="border-t item flex flex-col bg-white p-4 hover:bg-gray-200">
                                 <div class="flex justify-between items-center mt-2">
                                     <div class="w-1/2 flex items-center">
-                                        <input type="checkbox" name="category_ids[]" value="{{ $category->id }}" class="mr-2">
+                               {{--          <input type="checkbox" name="category_ids[]" value="{{ $category->id }}" class="mr-2"> --}}
                                         <span class="font-bold">{{ $category->name }}</span>
                                     </div>
                                     <div class="actions flex ml-6">

@@ -85,7 +85,7 @@
 
                 <div class="bg-gray-100 p-4 rounded-t flex justify-between items-center">
                     <div class="w-1/2 flex items-center">
-                        <input type="checkbox" class="mr-2">
+                     {{--    <input type="checkbox" class="mr-2"> --}}
                         <span class="font-bold">Title</span>
                     </div>
                     <div class="w-1/3"><span class="font-bold">Author</span></div>
@@ -99,7 +99,7 @@
                         class="border-t item flex flex-col bg-white p-4 {{ $loop->even ? 'bg-white' : 'bg-gray-200' }}">
                         <div class="flex justify-between items-center mt-2">
                             <div class="w-1/2 flex items-center">
-                                <input type="checkbox" class="mr-2">
+                           {{--      <input type="checkbox" class="mr-2"> --}}
                                 <span class="font-bold">{{ $post->title }}</span>
                             </div>
                             <div class="w-1/3">{{ $post->author }}</div>
