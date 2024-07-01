@@ -23,6 +23,7 @@ use App\Models\InstagramPost;
 use App\Models\PCompanyLogo;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +35,16 @@ use Illuminate\Http\Request;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+
+Route::get('/create-storage-link', function () {
+    try {
+        Artisan::call('storage:link');
+        return 'The symbolic link has been created.';
+    } catch (\Exception $e) {
+        return 'Error: ' . $e->getMessage();
+    }
+});
 
 Route::get('/', function () {
 
