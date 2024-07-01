@@ -16,7 +16,7 @@ class ProjectController extends Controller
 
     public function create()
     {
-        return view('projects.Create');
+        return view('Projects.Create');
     }
 
     public function store(Request $request)
@@ -44,7 +44,7 @@ class ProjectController extends Controller
 
     public function edit(Project $project)
     {
-        return view('projects.Edit', compact('project'));
+        return view('Projects.Edit', compact('project'));
     }
 
     public function update(Request $request, Project $project)
