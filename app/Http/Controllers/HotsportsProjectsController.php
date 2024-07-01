@@ -16,7 +16,7 @@ class HotsportsProjectsController extends Controller
 
     public function create()
     {
-        return view('HotsportsProjects.create');
+        return view('HotsportsProjects.Create');
     }
 
     public function store(Request $request)
