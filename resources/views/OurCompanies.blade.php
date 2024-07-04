@@ -8,10 +8,10 @@
 		<meta name="keywords" content="creative, modern, clean, html5, css3, portfolio, blog, agency, templates, minimal">
 
 		<!-- favicon -->
-		<link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}">
-		<link rel="apple-touch-icon" href="{{ asset('assets/images/apple-touch-icon-57x57.png') }}">
-		<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('assets/images/apple-touch-icon-72x72.png') }}">
-		<link rel="apple-touch-icon" sizes="114x114" href="{{ asset('assets/images/apple-touch-icon-114x114.png') }}">
+		<link rel="shortcut icon" href="{{ asset('/storage/media/'.'favicon.png') }}">
+		<link rel="apple-touch-icon" href="{{ asset('/storage/media/'.'apple-touch-icon-57x57.png') }}">
+		<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('/storage/media/'.'apple-touch-icon-72x72.png') }}">
+		<link rel="apple-touch-icon" sizes="114x114" href="{{ asset('/storage/media/'.'apple-touch-icon-114x114.png') }}">
 
 		<title>Our Companies</title>
 
@@ -27,7 +27,7 @@
 	<body class="preloader cursor-anim-enable dark-nav">
 		<!-- preloader-loading start -->
 		<div class="preloader__logoload-box">
-			<img class="preloader__logo" src="{{ asset('assets/images/Homepage/Main Logos/HS Media Group@2x.png') }}" alt="logo">
+			<img class="preloader__logo" src="{{ asset('/storage/media/'.'Homepage/Main Logos/HS Media Group@2x.png') }}" alt="logo">
 			<div class="preloader__pulse"></div>
 		</div><!-- preloader-loading end -->
 
@@ -158,7 +158,7 @@
 							<article class="four-columns  js-scrollanim">
 								<div class="hover-box pos-rel">
 									<a href="Hsmedia" class="d-block hidden-box js-pointer-large js-animsition-link">
-										<img class="img-hover-scale portfolio-column-img img-hover-opacity" src="{{ asset('assets/images/Our Companies/hs-studios.jpg') }}" alt="About Image">
+										<img class="img-hover-scale portfolio-column-img img-hover-opacity" src="{{ asset('/storage/media/'.'Our Companies/hs-studios.jpg') }}" alt="About Image">
 										<!-- bg-overlay -->
 										<!-- <div class="bg-overlay-black"></div> -->
 										<h3 class="  headline-sm pos-abs pos-left-bottom list list_margin-1px hover-move-up">
@@ -182,7 +182,7 @@
 							<article class="four-columns  js-scrollanim">
 								<div class=" hover-box pos-rel">
 									<a href="hotsports" class="d-block hidden-box js-pointer-large js-animsition-link">
-										<img class="img-hover-scale portfolio-column-img img-hover-opacity" style="width: 200%;" src="{{ asset('assets/images/Our Companies/Hotsports.jpg') }}" alt="About Image">
+										<img class="img-hover-scale portfolio-column-img img-hover-opacity" style="width: 200%;" src="{{ asset('/storage/media/'.'Our Companies/Hotsports.jpg') }}" alt="About Image">
 										<!-- bg-overlay -->
 										<!-- <div class="bg-overlay-black"></div> -->
 										<h3 class="  headline-sm pos-abs pos-left-bottom list list_margin-1px hover-move-up1">
@@ -221,7 +221,7 @@
 							<article class="four-columns js-scrollanim">
 								<div class="hover-box pos-rel">
 									<a href="Primedia" class="d-block hidden-box js-pointer-large js-animsition-link">
-										<img class="img-hover-scale portfolio-column-img img-hover-opacity" style="width: 110%;" src="{{ asset('assets/images/Our Companies/Primedia.jpg') }}" alt="About Image">
+										<img class="img-hover-scale portfolio-column-img img-hover-opacity" style="width: 110%;" src="{{ asset('/storage/media/'.'Our Companies/Primedia.jpg') }}" alt="About Image">
 										<!-- bg-overlay -->
 										<!-- <div class="bg-overlay-black"></div> -->
 										<h3 class="  headline-sm pos-abs pos-left-bottom list list_margin-1px hover-move-up">

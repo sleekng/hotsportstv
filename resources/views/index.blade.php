@@ -9,10 +9,10 @@
 	<meta name="keywords" content="#">
 
 	<!-- favicon -->
-	<link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}">
-	<link rel="apple-touch-icon" href="{{ asset('assets/images/apple-touch-icon-57x57.png') }}">
-	<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('assets/images/apple-touch-icon-72x72.png') }}">
-	<link rel="apple-touch-icon" sizes="114x114" href="{{ asset('assets/images/apple-touch-icon-114x114.png') }}">
+	<link rel="shortcut icon" href="{{ asset('/storage/media/'.'favicon.png') }}">
+	<link rel="apple-touch-icon" href="{{ asset('/storage/media/'.'apple-touch-icon-57x57.png') }}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('/storage/media/'.'apple-touch-icon-72x72.png') }}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ asset('/storage/media/'.'apple-touch-icon-114x114.png') }}">
 
 	<title>HS MEDIA GROUP</title>
 
@@ -33,7 +33,7 @@
 <body class="preloader cursor-anim-enable dark-nav">
 	<!-- preloader-loading start -->
 	<div class="preloader__logoload-box">
-		<img class="preloader__logo" src="{{ asset('assets/images/Homepage/Main Logos/HS Media Group.png') }}" alt="logo">
+		<img class="preloader__logo" src="{{ asset('/storage/media/'.'Homepage/Main Logos/HS Media Group.png') }}" alt="logo">
 		<div class="preloader__pulse"></div>
 	</div><!-- preloader-loading end -->
 
@@ -65,7 +65,7 @@
 		<div class="header-logo vertical js-midnight-color js-headroom" style="background-color: black;">
 			<div class="hidden-box">
 				<a href="/" class="header-logo__box  js-pointer-large js-animsition-link">
-					<img class="header-logo__img white margin-left-10 margin-right-20 margin-bottom-20" style="width: 90%;" src="{{ asset('assets/images/Homepage/Main Logos/HS Media Group@2x.png') }}"
+					<img class="header-logo__img white margin-left-10 margin-right-20 margin-bottom-20" style="width: 90%;" src="{{ asset('/storage/media/'.'Homepage/Main Logos/HS Media Group@2x.png') }}"
 						alt="logo">
 				</a>
 			</div>
@@ -134,35 +134,35 @@
 					<!-- swiper-slide start -->
 					<div class="swiper-slide">
 						<div class="nav-slide-bg"
-							style="background-image:url({{ asset('assets/images/projects/speakers/revolt-BMest61rcqs-unsplash.jpg') }})">
+							style="background-image:url({{ asset('/storage/media/'.'projects/speakers/revolt-BMest61rcqs-unsplash.jpg') }})">
 						</div>
 						<div class="bg-overlay-black"></div>
 					</div><!-- swiper-slide end -->
 					<!-- swiper-slide start -->
 					<div class="swiper-slide">
 						<div class="nav-slide-bg"
-							style="background-image:url({{ asset('assets/images/projects/sneakers/revolt-164_6wVEHfI-unsplash.jpg') }})">
+							style="background-image:url({{ asset('/storage/media/'.'projects/sneakers/revolt-164_6wVEHfI-unsplash.jpg') }})">
 						</div>
 						<div class="bg-overlay-black"></div>
 					</div><!-- swiper-slide end -->
 					<!-- swiper-slide start -->
 					<div class="swiper-slide">
 						<div class="nav-slide-bg"
-							style="background-image:url({{ asset('assets/images/projects/black-bike/josh-nuttall-pIwu5XNvXpk-unsplash.jpg') }})">
+							style="background-image:url({{ asset('/storage/media/'.'projects/black-bike/josh-nuttall-pIwu5XNvXpk-unsplash.jpg') }})">
 						</div>
 						<div class="bg-overlay-black"></div>
 					</div><!-- swiper-slide end -->
 					<!-- swiper-slide start -->
 					<div class="swiper-slide">
 						<div class="nav-slide-bg"
-							style="background-image:url({{ asset('assets/images/projects/pexels/woman-in-black-sexy-top-2825034.jpg') }})">
+							style="background-image:url({{ asset('/storage/media/'.'projects/pexels/woman-in-black-sexy-top-2825034.jpg') }})">
 						</div>
 						<div class="bg-overlay-black"></div>
 					</div><!-- swiper-slide end -->
 					<!-- swiper-slide start -->
 					<div class="swiper-slide">
 						<div class="nav-slide-bg"
-							style="background-image:url({{ asset('assets/images/projects/furniture/goashape-RvyJGaoaWrs-unsplash.jpg') }})">
+							style="background-image:url({{ asset('/storage/media/'.'projects/furniture/goashape-RvyJGaoaWrs-unsplash.jpg') }})">
 						</div>
 						<div class="bg-overlay-black"></div>
 					</div><!-- swiper-slide end -->
@@ -270,13 +270,13 @@
 				<div class="swiper-slide">
 					<!-- slide-bg -->
 					<div class="js-parallax-slide-bg bg-img-cover"
-					style="background-image:url({{ asset('assets/images/Homepage/Sliders/1.png') }})"></div>
+					style="background-image:url({{ asset('/storage/media/'.'Homepage/Sliders/1.png') }})"></div>
 					<!-- bg-overlay -->
 					<div class="bg-overlay-black"></div>
 					<!-- content start -->
 					<div class="flex-min-height-100vh pos-rel" data-swiper-parallax-x="30%">
 						<div class="container small text-center padding-bottom-120 padding-top-20 flex justify-center flex-col items-center px-4">
-							<img class="padding-bottom-80" src="{{ asset('assets/images/Homepage/Main Logos/HSM Logo.png') }}"
+							<img class="padding-bottom-80" src="{{ asset('/storage/media/'.'Homepage/Main Logos/HSM Logo.png') }}"
 								style="width: 25%;">
 							<h2 class="headline-s">
 								<span class="hidden-box d-block">
@@ -300,14 +300,14 @@
 				<div class="swiper-slide">
 					<!-- slide-bg -->
 					<div class="js-parallax-slide-bg bg-img-cover"
-						style="background-image:url({{ asset('assets/images/Homepage/Sliders/2.png') }})"></div>
+						style="background-image:url({{ asset('/storage/media/'.'Homepage/Sliders/2.png') }})"></div>
 					<!-- bg-overlay -->
 					<div class="bg-overlay-black"></div>
 
 					<!-- content start -->
 					<div class="flex-min-height-100vh pos-rel" data-swiper-parallax-x="30%">
 						<div class="container small text-center padding-top-bottom-120 flex justify-center flex-col items-center">
-							<img class="padding-bottom-40" src="{{ asset('assets/images/Homepage/Main Logos/HS Studios@2x.png') }}"
+							<img class="padding-bottom-40" src="{{ asset('/storage/media/'.'Homepage/Main Logos/HS Studios@2x.png') }}"
 								style="width: 25%;">
 							<h2 class="headline-s">
 								<span class="hidden-box d-block">
@@ -334,14 +334,14 @@
 				<div class="swiper-slide">
 					<!-- slide-bg -->
 					<div class="js-parallax-slide-bg bg-img-cover"
-						style="background-image:url({{ asset('assets/images/Homepage/Sliders/3.png') }})"></div>
+						style="background-image:url({{ asset('/storage/media/'.'Homepage/Sliders/3.png') }})"></div>
 					<!-- bg-overlay -->
 					<div class="bg-overlay-black"></div>
 
 					<!-- content start -->
 					<div class="flex-min-height-100vh pos-rel" data-swiper-parallax-x="30%">
 						<div class="container small text-center padding-top-bottom-120 flex justify-center flex-col items-center">
-							<img class="padding-bottom-80" src="{{ asset('assets/images/HotSports/Hotsports Logo.png') }}"
+							<img class="padding-bottom-80" src="{{ asset('/storage/media/'.'HotSports/Hotsports Logo.png') }}"
 								style="width: 60%;">
 							<h2 class="headline-s">
 								<span class="hidden-box d-block">
@@ -372,14 +372,14 @@
 				<div class="swiper-slide">
 					<!-- slide-bg -->
 					<div class="js-parallax-slide-bg bg-img-cover"
-						style="background-image:url({{ asset('assets/images/Homepage/Sliders/4@2x.png') }})"></div>
+						style="background-image:url({{ asset('/storage/media/'.'Homepage/Sliders/4@2x.png') }})"></div>
 					<!-- bg-overlay -->
 					<div class="bg-overlay-black"></div>
 
 					<!-- content start -->
 					<div class="flex-min-height-100vh pos-rel" data-swiper-parallax-x="30%">
 						<div class="container small text-center padding-top-bottom-120 flex justify-center flex-col items-center">
-							<img class="padding-bottom-80" src="{{ asset('assets/images/Homepage/Main Logos/Primedia Logo.png') }}"
+							<img class="padding-bottom-80" src="{{ asset('/storage/media/'.'Homepage/Main Logos/Primedia Logo.png') }}"
 								style="width: 50%;">
 							<h2 class="headline-s">
 								<span class="hidden-box d-block">
@@ -452,49 +452,49 @@
 					<div class="swiper-wrapper ">
 						<!-- swiper-slide start -->
 						<div class="swiper-slide">
-							<img  src="{{ asset('assets/images/Homepage/Infinite scroll images/harry-cunningham-UWblg2i6Blw-unsplash@2x.png') }}"
+							<img  src="{{ asset('/storage/media/'.'Homepage/Infinite scroll images/harry-cunningham-UWblg2i6Blw-unsplash@2x.png') }}"
 								alt="About-Us">
 						</div><!-- swiper-slide end -->
 
 						<!-- swiper-slide start -->
 						<div class="swiper-slide">
-							<img src="{{ asset('assets/images/Homepage/Infinite scroll images/john-benitez-2zFaN2YsGN8-unsplash@2x.png') }}"
+							<img src="{{ asset('/storage/media/'.'Homepage/Infinite scroll images/john-benitez-2zFaN2YsGN8-unsplash@2x.png') }}"
 								alt="About-Us">
 							<img class="padding-top-20"
-								src="{{ asset('assets/images/Homepage/Infinite scroll images/joshua-hanson-73ctnpVWJio-unsplash@2x.png') }}"
+								src="{{ asset('/storage/media/'.'Homepage/Infinite scroll images/joshua-hanson-73ctnpVWJio-unsplash@2x.png') }}"
 								alt="About-Us">
 						</div><!-- swiper-slide end -->
 
 						<!-- swiper-slide start -->
 						<div class="swiper-slide">
-							<img src="{{ asset('assets/images/Homepage/Infinite scroll images/kal-visuals-xYkVtNlkWOE-unsplash@2x.png') }}"
+							<img src="{{ asset('/storage/media/'.'Homepage/Infinite scroll images/kal-visuals-xYkVtNlkWOE-unsplash@2x.png') }}"
 								alt="About-Us">
 						</div><!-- swiper-slide end -->
 
 						<!-- swiper-slide start -->
 						<div class="swiper-slide">
-							<img src="{{ asset('assets/images/Homepage/Infinite scroll images/kate-oseen-XqLQxSUuEXQ-unsplash@2x.png') }}"
+							<img src="{{ asset('/storage/media/'.'Homepage/Infinite scroll images/kate-oseen-XqLQxSUuEXQ-unsplash@2x.png') }}"
 								alt="About-Us">
 						</div><!-- swiper-slide end -->
 
 						<!-- swiper-slide start -->
 						<div class="swiper-slide">
-							<img src="{{ asset('assets/images/Homepage/Infinite scroll images/randy-fath-6IqCA9-Q-QQ-unsplash@2x.png') }}"
+							<img src="{{ asset('/storage/media/'.'Homepage/Infinite scroll images/randy-fath-6IqCA9-Q-QQ-unsplash@2x.png') }}"
 								alt="About-Us">
 							<img class="padding-top-20"
-								src="{{ asset('assets/images/Homepage/Infinite scroll images/tymur-kuchumov-i-1@2x.png') }}"
+								src="{{ asset('/storage/media/'.'Homepage/Infinite scroll images/tymur-kuchumov-i-1@2x.png') }}"
 								alt="About-Us">
 						</div><!-- swiper-slide end -->
 
 						<!-- swiper-slide start -->
 						<div class="swiper-slide">
-							<img src="{{ asset('assets/images/Homepage/Infinite scroll images/alex-mccarthy-U9uiPBfKY9I-unsplash@2x.png') }}"
+							<img src="{{ asset('/storage/media/'.'Homepage/Infinite scroll images/alex-mccarthy-U9uiPBfKY9I-unsplash@2x.png') }}"
 								alt="About-Us">
 						</div><!-- swiper-slide end -->
 
 						<!-- swiper-slide start -->
 						<div class="swiper-slide">
-							<img src="{{ asset('assets/images/Homepage/Infinite scroll images/aziz-acharki-Zf14BckA1JA-unsplash@2x.png') }}"
+							<img src="{{ asset('/storage/media/'.'Homepage/Infinite scroll images/aziz-acharki-Zf14BckA1JA-unsplash@2x.png') }}"
 								alt="About-Us">
 						</div><!-- swiper-slide end -->
 					</div><!-- swiper-wrapper end -->
@@ -521,7 +521,7 @@
 						<article class="four-columns column-100-100  js-scrollanim">
 							<div class="column-l-r-margin-10-999 hover-box pos-rel">
 								<a href="Hsmedia" class="d-block hidden-box js-pointer-large js-animsition-link">
-									<img class="img-hover-scale img-hover-opacity" src="{{ asset('assets/images/Homepage/HS Studios@2x.png') }}"
+									<img class="img-hover-scale img-hover-opacity" src="{{ asset('/storage/media/'.'Homepage/HS Studios@2x.png') }}"
 										alt="About Image">
 									<!-- bg-overlay -->
 									<div class="bg-overlay-blackish"></div>
@@ -551,7 +551,7 @@
 						<article class="four-columns column-100-100  js-scrollanim">
 							<div class="column-l-r-margin-10-999 hover-box pos-rel">
 								<a href="hotsports" class="d-block hidden-box js-pointer-large js-animsition-link">
-									<img class="img-hover-scale img-hover-opacity" src="{{ asset('assets/images/Homepage/HotSports@2x.png') }}"
+									<img class="img-hover-scale img-hover-opacity" src="{{ asset('/storage/media/'.'Homepage/HotSports@2x.png') }}"
 										alt="About Image">
 									<!-- bg-overlay -->
 									<div class="bg-overlay-blackish"></div>
@@ -591,7 +591,7 @@
 						<article class="four-columns column-100-100  js-scrollanim">
 							<div class="column-l-r-margin-10-999 hover-box pos-rel">
 								<a href="Primedia" class="d-block hidden-box js-pointer-large js-animsition-link">
-									<img class="img-hover-scale img-hover-opacity" src="{{ asset('assets/images/Homepage/Primedia.png') }}"
+									<img class="img-hover-scale img-hover-opacity" src="{{ asset('/storage/media/'.'Homepage/Primedia.png') }}"
 										alt="About Image">
 									<!-- bg-overlay -->
 									<div class="bg-overlay-blackish"></div>
@@ -630,10 +630,6 @@
 							Our Blog
 						</span>
 					</h2><!-- title end -->
-
-
-
-
 
 					<!-- flex-container start -->
 					<div class="flex-container margin-top-bottom-30">
@@ -874,7 +870,7 @@
 
 	<!-- footer start -->
 	<footer class="fixed-footer pos-rel bg-img-cover js-fixed-footer"
-		style="background-image:url({{ asset('assets/images/Homepage/Sliders/1@2x.png') }})">
+		style="background-image:url({{ asset('/storage/media/'.'Homepage/Sliders/1@2x.png') }})">
 		<!-- bg-overlay -->
 		<div class="bg-overlay-black"></div>
 		<!-- pos-rel start -->

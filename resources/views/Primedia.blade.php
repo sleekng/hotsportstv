@@ -10,10 +10,10 @@
     <meta name="keywords" content="#">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}">
-    <link rel="apple-touch-icon" href="{{ asset('assets/images/apple-touch-icon-57x57.png') }}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('assets/images/apple-touch-icon-72x72.png') }}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('assets/images/apple-touch-icon-114x114.png') }}">
+    <link rel="shortcut icon" href="{{ asset('/storage/media/' . 'favicon.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('/storage/media/' . 'apple-touch-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('/storage/media/' . 'apple-touch-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('/storage/media/' . 'apple-touch-icon-114x114.png') }}">
 
     <title>Primedia International</title>
 
@@ -33,7 +33,7 @@
     <!-- preloader-loading start -->
     <div class="preloader__logoload-box">
         <img class="preloader__logo vertical"
-            src="{{ asset('assets/images/Homepage/Main Logos/HS Media Group@2x.png') }}" alt="logo">
+            src="{{ asset('/storage/media/' . 'Homepage/Main Logos/HS Media Group@2x.png') }}" alt="logo">
         <div class="preloader__pulse"></div>
     </div><!-- preloader-loading end -->
 
@@ -127,35 +127,35 @@
                     <!-- swiper-slide start -->
                     <div class="swiper-slide">
                         <div class="nav-slide-bg"
-                            style="background-image:url({{ asset('assets/images/projects/speakers/revolt-BMest61rcqs-unsplash.jpg') }})">
+                            style="background-image:url({{ asset('/storage/media/' . 'projects/speakers/revolt-BMest61rcqs-unsplash.jpg') }})">
                         </div>
                         <div class="bg-overlay-black"></div>
                     </div><!-- swiper-slide end -->
                     <!-- swiper-slide start -->
                     <div class="swiper-slide">
                         <div class="nav-slide-bg"
-                            style="background-image:url({{ asset('assets/images/projects/sneakers/revolt-164_6wVEHfI-unsplash.jpg') }})">
+                            style="background-image:url({{ asset('/storage/media/' . 'projects/sneakers/revolt-164_6wVEHfI-unsplash.jpg') }})">
                         </div>
                         <div class="bg-overlay-black"></div>
                     </div><!-- swiper-slide end -->
                     <!-- swiper-slide start -->
                     <div class="swiper-slide">
                         <div class="nav-slide-bg"
-                            style="background-image:url({{ asset('assets/images/projects/black-bike/josh-nuttall-pIwu5XNvXpk-unsplash.jpg') }})">
+                            style="background-image:url({{ asset('/storage/media/' . 'projects/black-bike/josh-nuttall-pIwu5XNvXpk-unsplash.jpg') }})">
                         </div>
                         <div class="bg-overlay-black"></div>
                     </div><!-- swiper-slide end -->
                     <!-- swiper-slide start -->
                     <div class="swiper-slide">
                         <div class="nav-slide-bg"
-                            style="background-image:url({{ asset('assets/images/projects/pexels/woman-in-black-sexy-top-2825034.jpg') }})">
+                            style="background-image:url({{ asset('/storage/media/' . 'projects/pexels/woman-in-black-sexy-top-2825034.jpg') }})">
                         </div>
                         <div class="bg-overlay-black"></div>
                     </div><!-- swiper-slide end -->
                     <!-- swiper-slide start -->
                     <div class="swiper-slide">
                         <div class="nav-slide-bg"
-                            style="background-image:url({{ asset('assets/images/projects/furniture/goashape-RvyJGaoaWrs-unsplash.jpg') }})">
+                            style="background-image:url({{ asset('/storage/media/' . 'projects/furniture/goashape-RvyJGaoaWrs-unsplash.jpg') }})">
                         </div>
                         <div class="bg-overlay-black"></div>
                     </div><!-- swiper-slide end -->
@@ -258,7 +258,7 @@
     <main class="js-animsition-overlay" data-animsition-overlay="true">
         <!-- pos-rel start -->
         <section id="up" class="pos-rel js-parallax-bg"
-            style="background-image:url({{ asset('assets/images/Homepage/Sliders/4@2x.png') }})">
+            style="background-image:url({{ asset('/storage/media/' . 'Homepage/Sliders/4@2x.png') }})">
             <!-- bg-overlay -->
             <div class="bg-overlay-black"></div>
             <!-- lines-container start -->
@@ -266,7 +266,7 @@
                 <div class="padding-top-bottom-120 width-100perc">
                     <div class="margin-top-30 text-center tr-delay-08">
                         <img class="padding-bottom-80"
-                            src="{{ asset('assets/images/Homepage/Main Logos/Primedia Logo.png') }}"
+                            src="{{ asset('/storage/media/' . 'Homepage/Main Logos/Primedia Logo.png') }}"
                             style="width: 50%;"> <br>
                     </div>
                 </div>
@@ -544,132 +544,58 @@
                 <div class=" width-100perc flex-container">
 
 
-                   <!-- Column start for the remaining companies -->
-<!-- Column start for the remaining companies -->
-@php $firstChunk = true; @endphp
-@foreach ($pcompanies as $index => $pcompany)
-    @if ($index >= 8)
-        @if (($index - 8) % 6 == 0)
-            @if (!$firstChunk)
+                    <!-- Column start for the remaining companies -->
+                    <!-- Column start for the remaining companies -->
+                    @php $firstChunk = true; @endphp
+                    @foreach ($pcompanies as $index => $pcompany)
+                        @if ($index >= 8)
+                            @if (($index - 8) % 6 == 0)
+                                @if (!$firstChunk)
                 </div><!-- column end -->
-            @endif
-            <div class="twelve-columns column-100-100 flex-container">
-            @php $firstChunk = false; @endphp
-        @endif
+                @endif
+                <div class="twelve-columns column-100-100 flex-container">
+                    @php $firstChunk = false; @endphp
+                    @endif
 
-        <div class="two-columns client-logo-border client-img">
-            <div class="client-logo-border__inner pos-rel">
-                <img class="client-logo pos-abs pos-center-center" src="{{ asset('storage/' . $pcompany->image) }}" alt="clients logo">
-            </div>
-        </div><!-- logo box end -->
-    @endif
-@endforeach
-</div><!-- column end -->
+                    <div class="two-columns client-logo-border client-img">
+                        <div class="client-logo-border__inner pos-rel">
+                            <img class="client-logo pos-abs pos-center-center"
+                                src="{{ asset('storage/' . $pcompany->image) }}" alt="clients logo">
+                        </div>
+                    </div><!-- logo box end -->
+                    @endif
+                    @endforeach
+                </div><!-- column end -->
 
-                    <!-- column start -->
-                    <div class="twelve-columns column-100-100 flex-container">
-                        <div class="two-columns client-logo-border client-img">
-                            <div class="client-logo-border__inner pos-rel">
-                                <img class="client-logo pos-abs pos-center-center"
-                                    src="{{ asset('assets/images/Brands-Worked-With/Primedia/14.png') }}"
-                                    alt="clients logo">
-                            </div>
-                        </div><!-- logo box end -->
-                        <!-- logo box start -->
-                        <div class="two-columns client-logo-border client-img">
-                            <div class="client-logo-border__inner pos-rel">
-                                <img class="client-logo pos-abs pos-center-center"
-                                    src="{{ asset('assets/images/Brands-Worked-With/Primedia/15.png') }}"
-                                    alt="clients logo">
-                            </div>
-                        </div><!-- logo box end -->
-                        <div class="two-columns client-logo-border client-img">
-                            <div class="client-logo-border__inner pos-rel">
-                                <img class="client-logo pos-abs pos-center-center"
-                                    src="{{ asset('assets/images/Brands-Worked-With/Primedia/16.png') }}"
-                                    alt="clients logo">
-                            </div>
-                        </div><!-- logo box end -->
-                        <!-- logo box start -->
-                        <div class="two-columns client-logo-border client-img">
-                            <div class="client-logo-border__inner pos-rel">
-                                <img class="client-logo pos-abs pos-center-center"
-                                    src="{{ asset('assets/images/Brands-Worked-With/Primedia/21.png') }}"
-                                    alt="clients logo">
-                            </div>
-                        </div><!-- logo box end -->
-                        <!-- logo box start -->
-                        <div class="two-columns client-logo-border client-img">
-                            <div class="client-logo-border__inner pos-rel">
-                                <img class="client-logo pos-abs pos-center-center"
-                                    src="{{ asset('assets/images/Brands-Worked-With/Primedia/18.png') }}"
-                                    alt="clients logo">
-                            </div>
-                        </div><!-- logo box end -->
-                        <!-- logo box start -->
-                        <div class="two-columns client-logo-border client-img">
-                            <div class="client-logo-border__inner pos-rel">
-                                <img class="client-logo pos-abs pos-center-center"
-                                    src="{{ asset('assets/images/Brands-Worked-With/Primedia/19.png') }}"
-                                    alt="clients logo">
-                            </div>
-                        </div><!-- logo box end -->
-                        <div class="two-columns client-logo-border client-img">
-                            <div class="client-logo-border__inner pos-rel">
-                                <img class="client-logo pos-abs pos-center-center"
-                                    src="{{ asset('assets/images/Brands-Worked-With/Primedia/22.png') }}"
-                                    alt="clients logo">
-                            </div>
-                        </div><!-- logo box end -->
-                        <div class="two-columns client-logo-border client-img">
-                            <div class="client-logo-border__inner pos-rel">
-                                <img class="client-logo pos-abs pos-center-center"
-                                    src="{{ asset('assets/images/Brands-Worked-With/Primedia/23.png') }}"
-                                    alt="clients logo">
-                            </div>
-                        </div><!-- logo box end -->
-                        <div class="two-columns client-logo-border client-img">
-                            <div class="client-logo-border__inner pos-rel">
-                                <img class="client-logo pos-abs pos-center-center"
-                                    src="{{ asset('assets/images/Brands-Worked-With/Primedia/24.png') }}"
-                                    alt="clients logo">
-                            </div>
-                        </div><!-- logo box end -->
-                        <div class="two-columns client-logo-border client-img">
-                            <div class="client-logo-border__inner pos-rel">
-                                <img class="client-logo pos-abs pos-center-center"
-                                    src="{{ asset('assets/images/Brands-Worked-With/Primedia/25.png') }}"
-                                    alt="clients logo">
-                            </div>
-                        </div><!-- logo box end -->
-                        <!-- logo box start -->
-                        <a href="#" class="four-columns client-logo-border js-pointer-large">
-                            <div class="client-logo-border__inner hover-box pos-rel js-scrollanim">
-                                <div class="padding-left-right-20 subhead-xxs text-center pos-abs pos-center-center">
-                                    <span class="anim-text-double-fill black" data-text="This spot">This
-                                        spot</span><br>
-                                    <span class="anim-text-double-fill black tr-delay-02"
-                                        data-text="awaits">awaits</span><br>
-                                    <span class="anim-text-double-fill black tr-delay-04" data-text="You">You</span>
-                                </div>
-                                <div class="border-left-anim in-10px red"></div>
-                                <div class="border-top-anim in-10px red"></div>
-                                <div class="border-right-anim in-10px red"></div>
-                                <div class="border-bottom-anim in-10px red"></div>
-                            </div>
-                        </a>
-                        <!-- logo box end -->
-                    </div><!-- column end -->
+                <!-- column start -->
+                <div class="twelve-columns column-100-100 flex-container">
 
 
-                </div><!-- flex-container end -->
+                    <!-- logo box start -->
+                    <a href="#" class="four-columns client-logo-border js-pointer-large">
+                        <div class="client-logo-border__inner hover-box pos-rel js-scrollanim">
+                            <div class="padding-left-right-20 subhead-xxs text-center pos-abs pos-center-center">
+                                <span class="anim-text-double-fill black" data-text="This spot">This
+                                    spot</span><br>
+                                <span class="anim-text-double-fill black tr-delay-02"
+                                    data-text="awaits">awaits</span><br>
+                                <span class="anim-text-double-fill black tr-delay-04" data-text="You">You</span>
+                            </div>
+
+                        </div>
+                    </a>
+                    <!-- logo box end -->
+                </div><!-- column end -->
+
+
+            </div><!-- flex-container end -->
             </div><!-- lines-container end -->
         </section>
     </main><!-- main end -->
 
     <!-- footer start -->
     <footer class="fixed-footer pos-rel bg-img-cover js-fixed-footer"
-        style="background-image:url({{ asset('assets/images/Homepage/Sliders/1@2x.png') }})">
+        style="background-image:url({{ asset('/storage/media/' . 'Homepage/Sliders/1@2x.png') }})">
         <!-- bg-overlay -->
         <div class="bg-overlay-black"></div>
         <!-- pos-rel start -->
@@ -761,7 +687,7 @@
                     </li>
 
                     <li class="list__item">
-                        <a href="#" class="flip-btn js-pointer-small" data-text="Instagram">Instagram</a>
+                        <a href="https://www.instagram.com/hotsportsng/" class="flip-btn js-pointer-small" data-text="Instagram">Instagram</a>
                     </li>
                     <li class="list__item">
                         <a href="#" class="flip-btn js-pointer-small" data-text="Twitter">Twitter</a>

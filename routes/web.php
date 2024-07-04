@@ -5,6 +5,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CompanyLogoController;
 use App\Http\Controllers\HotsportsProjectsController;
 use App\Http\Controllers\InstagramPostController;
+use App\Http\Controllers\MediaController;
 use App\Http\Controllers\PCompanyLogoController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectController;
@@ -20,6 +21,7 @@ use App\Models\Category;
 use App\Models\CompanyLogo;
 use App\Models\HotsportsProjects;
 use App\Models\InstagramPost;
+use App\Models\Media;
 use App\Models\PCompanyLogo;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
@@ -49,13 +51,15 @@ Route::get('/create-storage-link', function () {
 Route::get('/', function () {
 
     $posts = BlogPost::query()->where('status', 'published')->paginate(6);
+    $HomePage =Media::where('page','Homepage')->get();
 
-    return view('index', compact('posts'));
+    return view('index', compact(['posts','HomePage']));
 });
 
 Route::get('/About-Us', function () {
 
     $teams = Team::all();
+    
     return view('AboutUs', compact('teams'));
 })->name('About-Us');
 
@@ -134,6 +138,7 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
+    Route::resource('media', MediaController::class);
 
     Route::get('/dashboard', function () {
         return view('dashboard');
@@ -167,13 +172,8 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__ . '/auth.php';
 
-Route::get('/media', function () {
-    return view('Media/Index');
-});
 
-Route::get('/media-edit', function () {
-    return view('Media/Edit');
-});
+
 
 
 Route::get('/blog', function (Request $request) {

@@ -35,20 +35,20 @@
         }
     </style>
 
-<script>
-    function confirmDelete(event) {
-        event.preventDefault(); // Prevent the form from submitting immediately
-        const userConfirmed = confirm('Do you really want to delete this?');
-        if (userConfirmed) {
-            event.target.submit(); // Submit the form if the user confirmed
+    <script>
+        function confirmDelete(event) {
+            event.preventDefault(); // Prevent the form from submitting immediately
+            const userConfirmed = confirm('Do you really want to delete this?');
+            if (userConfirmed) {
+                event.target.submit(); // Submit the form if the user confirmed
+            }
         }
-    }
-</script>
+    </script>
 
 </head>
 
 <body class="flex w-full">
-    <x-side-bar/>
+    <x-side-bar />
     <div class="w-full h-screen overflow-y-auto  ">
         <div class="text-right bg-gray-800 text-gray-100 p-4">
             <span class="text-sm">Welcome, {{ Auth::user()->name }}</span>
@@ -62,77 +62,82 @@
                     <div class=" text-xl font-bold">
                         All ({{ $projects->count() }})
                     </div>
-                    <a href="{{ route('projects.create') }}" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Add New</a>
+                    <a href="{{ route('projects.create') }}" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Add
+                        New</a>
                     <div>
                         <input type="text" placeholder="Search Projects" class="border p-2 ml-4 rounded-lg" />
                         <button class="bg-blue-500 text-white px-4 py-2 ml-2 rounded-lg">Search Pages</button>
                     </div>
                 </div>
                 <!-- Display Success Message -->
-@if(session('success'))
-<div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
-    <span class="block sm:inline">{{ session('success') }}</span>
-</div>
-@endif
+                @if (session('success'))
+                    <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative"
+                        role="alert">
+                        <span class="block sm:inline">{{ session('success') }}</span>
+                    </div>
+                @endif
 
 
 
                 <div class="bg-gray-100 p-4 rounded-t flex justify-between items-center">
                     <div class="w-1/2 flex items-center">
-                    {{--     <input type="checkbox" class="mr-2"> --}}
+                        {{--     <input type="checkbox" class="mr-2"> --}}
                         <span class="font-bold">Title</span>
                     </div>
                     <div class="w-1/6"><span class="font-bold">Author</span></div>
                     <div class="w-1/6"><span class="font-bold">Date</span></div>
                 </div>
 
-                @if($projects->isEmpty())
-                <div class="border-t item flex flex-col bg-white p-4 hover:bg-gray-200">
-                    <div class="flex justify-between items-center mt-2">
-                        <div class="w-full flex items-center">
-                            <span class="font-bold">No projects available.</span>
+                @if ($projects->isEmpty())
+                    <div class="border-t item flex flex-col bg-white p-4 hover:bg-gray-200">
+                        <div class="flex justify-between items-center mt-2">
+                            <div class="w-full flex items-center">
+                                <span class="font-bold">No projects available.</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            @else
-                @foreach ($projects as $project)
-                    <div class=" border-t item flex flex-col bg-white p-4 hover:bg-gray-200">
+                @else
+                    @foreach ($projects as $project)
+                        <div class=" border-t item flex flex-col bg-white p-4 hover:bg-gray-200">
 
-                        <div class=" flex justify-between items-center mt-2 ">
-                            <div class="flex w-1/2  items-center mt-2 space-x-4">
-                                <div class="flex space-x-2"> 
-                             {{--        <input type="checkbox" class="mr-2"> --}}
-                                @if ($project->image)
-                                    <div class="">
-                                        <img src="{{ asset('storage/' . $project->image) }}" alt="Current Image" class="w-20 h-20 mr-4">
+                            <div class=" flex justify-between items-center mt-2 ">
+                                <div class="flex w-1/2  items-center mt-2 space-x-4">
+                                    <div class="flex space-x-2">
+                                        {{--        <input type="checkbox" class="mr-2"> --}}
+                                        @if ($project->image)
+                                            <div class="">
+                                                <img src="{{ asset('storage/' . $project->image) }}" alt="Current Image"
+                                                    class="w-20 h-20 mr-4">
+                                            </div>
+                                        @endif
                                     </div>
-                                @endif
-                                </div>
-                                <div class=" flex flex-col ">
-                                    <span class="font-bold">{{ $project->title }}</span>
-                                    <div class="actions">
-                                        <div class="w-full flex mt-2">
-                                            <a href="{{ route('projects.edit', $project->id) }}"
-                                                class="bg-blue-600 text-white px-4 py-2 rounded mr-2 hover:bg-blue-500">Edit</a>
-                                                <form action="{{ route('projects.destroy', $project->id) }}" method="POST" class="inline-block" onsubmit="confirmDelete(event)">
+                                    <div class=" flex flex-col ">
+                                        <span class="font-bold">{{ $project->title }}</span>
+                                        <div class="actions">
+                                            <div class="w-full flex mt-2">
+                                                <a href="{{ route('projects.edit', $project->id) }}"
+                                                    class="bg-blue-600 text-white px-4 py-2 rounded mr-2 hover:bg-blue-500">Edit</a>
+                                                <form action="{{ route('projects.destroy', $project->id) }}"
+                                                    method="POST" class="inline-block" onsubmit="confirmDelete(event)">
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="bg-red-500 text-white px-4 py-2 rounded">Delete</button>
+                                                    <button type="submit"
+                                                        class="bg-red-500 text-white px-4 py-2 rounded">Delete</button>
                                                 </form>
+                                            </div>
+
                                         </div>
-            
                                     </div>
                                 </div>
+                                <div class="w-1/6">{{ $project->author }}</div>
+                                <div class="w-1/6">
+                                    Published: <br>{{ $project->created_at->format('jS M, Y') }}
+                                </div>
+
                             </div>
-                            <div class="w-1/6">{{ $project->author }}</div>
-                            <div class="w-1/6">
-                                Published: <br>{{ $project->created_at->format('jS M, Y') }}
-                            </div>
-                      
+
                         </div>
-                       
-                    </div>
-                @endforeach
+                    @endforeach
                 @endif
             </div>
         </div>

@@ -10,10 +10,10 @@
     <meta name="keywords" content="#">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}">
-    <link rel="apple-touch-icon" href="{{ asset('assets/images/apple-touch-icon-57x57.png') }}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('assets/images/apple-touch-icon-72x72.png') }}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('assets/images/apple-touch-icon-114x114.png') }}">
+    <link rel="shortcut icon" href="{{ asset('/storage/media/'.'favicon.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('/storage/media/'.'apple-touch-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('/storage/media/'.'apple-touch-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('/storage/media/'.'apple-touch-icon-114x114.png') }}">
 
     <title>Hotsports</title>
 
@@ -49,7 +49,7 @@
     <!-- preloader-loading start -->
     <div class="preloader__logoload-box">
         <img class="preloader__logo vertical"
-            src="{{ asset('assets/images/Homepage/Main Logos/HS Media Group@2x.png') }}" alt="logo">
+            src="{{ asset('/storage/media/'.'Homepage/Main Logos/HS Media Group@2x.png') }}" alt="logo">
         <div class="preloader__pulse"></div>
     </div><!-- preloader-loading end -->
 
@@ -85,7 +85,7 @@
                 <a href="/" class="header-logo__box  js-pointer-large js-animsition-link">
                     <img class="header-logo__img white margin-left-10 margin-right-20 margin-bottom-20"
                         style="width: 90%;"
-                        src="{{ asset('assets/images/Homepage/Main Logos/HS Media Group@2x.png') }}" alt="logo">
+                        src="{{ asset('/storage/media/'.'Homepage/Main Logos/HS Media Group@2x.png') }}" alt="logo">
                 </a>
             </div>
         </div><!-- logo end -->
@@ -153,35 +153,35 @@
                     <!-- swiper-slide start -->
                     <div class="swiper-slide">
                         <div class="nav-slide-bg"
-                            style="background-image:url({{ asset('assets/images/projects/speakers/revolt-BMest61rcqs-unsplash.jpg') }})">
+                            style="background-image:url({{ asset('/storage/media/'.'projects/speakers/revolt-BMest61rcqs-unsplash.jpg') }})">
                         </div>
                         <div class="bg-overlay-black"></div>
                     </div><!-- swiper-slide end -->
                     <!-- swiper-slide start -->
                     <div class="swiper-slide">
                         <div class="nav-slide-bg"
-                            style="background-image:url({{ asset('assets/images/projects/sneakers/revolt-164_6wVEHfI-unsplash.jpg') }})">
+                            style="background-image:url({{ asset('/storage/media/'.'projects/sneakers/revolt-164_6wVEHfI-unsplash.jpg') }})">
                         </div>
                         <div class="bg-overlay-black"></div>
                     </div><!-- swiper-slide end -->
                     <!-- swiper-slide start -->
                     <div class="swiper-slide">
                         <div class="nav-slide-bg"
-                            style="background-image:url({{ asset('assets/images/projects/black-bike/josh-nuttall-pIwu5XNvXpk-unsplash.jpg') }})">
+                            style="background-image:url({{ asset('/storage/media/'.'projects/black-bike/josh-nuttall-pIwu5XNvXpk-unsplash.jpg') }})">
                         </div>
                         <div class="bg-overlay-black"></div>
                     </div><!-- swiper-slide end -->
                     <!-- swiper-slide start -->
                     <div class="swiper-slide">
                         <div class="nav-slide-bg"
-                            style="background-image:url({{ asset('assets/images/projects/pexels/woman-in-black-sexy-top-2825034.jpg') }})">
+                            style="background-image:url({{ asset('/storage/media/'.'projects/pexels/woman-in-black-sexy-top-2825034.jpg') }})">
                         </div>
                         <div class="bg-overlay-black"></div>
                     </div><!-- swiper-slide end -->
                     <!-- swiper-slide start -->
                     <div class="swiper-slide">
                         <div class="nav-slide-bg"
-                            style="background-image:url({{ asset('assets/images/projects/furniture/goashape-RvyJGaoaWrs-unsplash.jpg') }})">
+                            style="background-image:url({{ asset('/storage/media/'.'projects/furniture/goashape-RvyJGaoaWrs-unsplash.jpg') }})">
                         </div>
                         <div class="bg-overlay-black"></div>
                     </div><!-- swiper-slide end -->

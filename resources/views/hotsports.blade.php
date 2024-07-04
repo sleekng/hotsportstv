@@ -10,10 +10,10 @@
     <meta name="keywords" content="#">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}">
-    <link rel="apple-touch-icon" href="{{ asset('assets/images/apple-touch-icon-57x57.png') }}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('assets/images/apple-touch-icon-72x72.png') }}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('assets/images/apple-touch-icon-114x114.png') }}">
+    <link rel="shortcut icon" href="{{ asset('/storage/media/'.'favicon.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('/storage/media/'.'apple-touch-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('/storage/media/'.'apple-touch-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('/storage/media/'.'apple-touch-icon-114x114.png') }}">
 
     <title>Hotsports</title>
 
@@ -73,7 +73,7 @@
     <!-- preloader-loading start -->
     <div class="preloader__logoload-box">
         <img class="preloader__logo vertical"
-            src="{{ asset('assets/images/Homepage/Main Logos/HS Media Group@2x.png') }}" alt="logo">
+            src="{{ asset('/storage/media/'.'Homepage/Main Logos/HS Media Group@2x.png') }}" alt="logo">
         <div class="preloader__pulse"></div>
     </div><!-- preloader-loading end -->
 
@@ -119,29 +119,30 @@
             <ul class="list list_center list_margin-20px hidden-box">
                 <li class="list__item">
                     <div class="hidden-box d-inline-block">
-                        <a href="#" class="anim-slide js-pointer-small">
+                        <a href="https://www.facebook.com/HotSportsng" class="anim-slide js-pointer-small">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </div>
                 </li>
                 <li class="list__item">
                     <div class="hidden-box d-inline-block">
-                        <a href="#" class="anim-slide tr-delay-02 js-pointer-small">
-                            <i class="fab fa-twitter fa-lg"></i>
-                        </a>
-                    </div>
-                </li>
-                <li class="list__item">
-                    <div class="hidden-box d-inline-block">
-                        <a href="#" class="anim-slide tr-delay-04 js-pointer-small">
+                        <a href="https://www.instagram.com/hotsportsng/" class="anim-slide tr-delay-04 js-pointer-small">
                             <i class="fab fa-instagram fa-2x"></i>
                         </a>
                     </div>
                 </li>
                 <li class="list__item">
                     <div class="hidden-box d-inline-block">
-                        <a href="#" class="anim-slide tr-delay-06 js-pointer-small">
-                            <i class="fab fa-linkedin"></i>
+                        <a href="https://www.youtube.com/@HotSportsNetwork" class="anim-slide tr-delay-02 js-pointer-small">
+                            <i class="fab fa-youtube fa-lg"></i>
+                        </a>
+                    </div>
+                </li>
+              
+                <li class="list__item">
+                    <div class="hidden-box d-inline-block">
+                        <a href="https://chat.whatsapp.com/I8gPv0UXrdy2e1KDwbpHA5" class="anim-slide tr-delay-06 js-pointer-small">
+                            <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
                 </li>
@@ -167,35 +168,35 @@
                     <!-- swiper-slide start -->
                     <div class="swiper-slide">
                         <div class="nav-slide-bg"
-                            style="background-image:url({{ asset('assets/images/projects/speakers/revolt-BMest61rcqs-unsplash.jpg') }})">
+                            style="background-image:url({{ asset('/storage/media/'.'projects/speakers/revolt-BMest61rcqs-unsplash.jpg') }})">
                         </div>
                         <div class="bg-overlay-black"></div>
                     </div><!-- swiper-slide end -->
                     <!-- swiper-slide start -->
                     <div class="swiper-slide">
                         <div class="nav-slide-bg"
-                            style="background-image:url({{ asset('assets/images/projects/sneakers/revolt-164_6wVEHfI-unsplash.jpg') }})">
+                            style="background-image:url({{ asset('/storage/media/'.'projects/sneakers/revolt-164_6wVEHfI-unsplash.jpg') }})">
                         </div>
                         <div class="bg-overlay-black"></div>
                     </div><!-- swiper-slide end -->
                     <!-- swiper-slide start -->
                     <div class="swiper-slide">
                         <div class="nav-slide-bg"
-                            style="background-image:url({{ asset('assets/images/projects/black-bike/josh-nuttall-pIwu5XNvXpk-unsplash.jpg') }})">
+                            style="background-image:url({{ asset('/storage/media/'.'projects/black-bike/josh-nuttall-pIwu5XNvXpk-unsplash.jpg') }})">
                         </div>
                         <div class="bg-overlay-black"></div>
                     </div><!-- swiper-slide end -->
                     <!-- swiper-slide start -->
                     <div class="swiper-slide">
                         <div class="nav-slide-bg"
-                            style="background-image:url({{ asset('assets/images/projects/pexels/woman-in-black-sexy-top-2825034.jpg') }})">
+                            style="background-image:url({{ asset('/storage/media/'.'projects/pexels/woman-in-black-sexy-top-2825034.jpg') }})">
                         </div>
                         <div class="bg-overlay-black"></div>
                     </div><!-- swiper-slide end -->
                     <!-- swiper-slide start -->
                     <div class="swiper-slide">
                         <div class="nav-slide-bg"
-                            style="background-image:url({{ asset('assets/images/projects/furniture/goashape-RvyJGaoaWrs-unsplash.jpg') }})">
+                            style="background-image:url({{ asset('/storage/media/'.'projects/furniture/goashape-RvyJGaoaWrs-unsplash.jpg') }})">
                         </div>
                         <div class="bg-overlay-black"></div>
                     </div><!-- swiper-slide end -->
@@ -298,7 +299,7 @@
     <main class="js-animsition-overlay" data-animsition-overlay="true">
         <!-- pos-rel start -->
         <section id="up" class="pos-rel js-parallax-bg"
-            style="background-image:url({{ asset('assets/images/HotSports/Hero\ Image@2x.png') }})">
+            style="background-image:url({{ asset('/storage/media/'.'HotSports/Hero\ Image@2x.png') }})">
             <!-- bg-overlay -->
             <div class="bg-overlay-black"></div>
             <!-- lines-container start -->
@@ -306,7 +307,7 @@
                 <div class="padding-top-bottom-120 width-100perc">
                     <div class="margin-top-30 text-center tr-delay-08">
                         <img class="padding-bottom-80"
-                            src="{{ asset('assets/images/HotSports/Hotsports Logo.png') }}" style="width: 50%;"> <br>
+                            src="{{ asset('/storage/media/'.'HotSports/Hotsports Logo.png') }}" style="width: 50%;"> <br>
                     </div>
                 </div>
             </div><!-- lines-container end -->
@@ -348,7 +349,7 @@
                     <div class="three-columns">
                         <div class="column-l-r-margin-5 ">
                             <img class="img-hover-scale"
-                                src="{{ asset('assets/images/HotSports/HIi12zs8Td@2x.png') }}" alt="About-Us">
+                                src="{{ asset('/storage/media/'.'HotSports/HIi12zs8Td@2x.png') }}" alt="About-Us">
                         </div>
                     </div><!-- column end -->
                 </div><!-- flex-container end -->
@@ -366,7 +367,7 @@
                     <div class="six-columns padding-bottom-50">
                         <div class="column-l-r-margin-5 ">
                             <img class="img-hover-scale"
-                                src="{{ asset('assets/images/HotSports/ssurKcsq3g@2x.png') }}" alt="About-Us">
+                                src="{{ asset('/storage/media/'.'HotSports/ssurKcsq3g@2x.png') }}" alt="About-Us">
                         </div>
                     </div><!-- column end -->
 
@@ -395,7 +396,7 @@
         </section>
 
         <section class="pos-rel bg-img-cover"
-            style="background-image:url({{ asset('assets/images/HotSports/NFA\ Background@2x.png') }})">
+            style="background-image:url({{ asset('/storage/media/'.'HotSports/NFA\ Background@2x.png') }})">
             <!-- bg-overlay -->
             <div class="bg-overlay-black"></div>
             <!-- pos-rel start -->
@@ -405,7 +406,7 @@
                         <!-- title start -->
                         <div class="">
                             <img class="padding-bottom-80"
-                                src="{{ asset('assets/images/HotSports/Nigerian Football Federation@2x.png') }}"
+                                src="{{ asset('/storage/media/'.'HotSports/Nigerian Football Federation@2x.png') }}"
                                 style="width: 25%;">
                         </div>
                         <!-- title end -->
@@ -618,7 +619,7 @@
                     <!-- column start -->
                     <div class="four-columns">
                         <div class="column-l-r-margin-5 ">
-                            <img class="img-hover-scale" src="{{ asset('assets/images/HotSports/Sporty@2x.png') }}"
+                            <img class="img-hover-scale" src="{{ asset('/storage/media/'.'HotSports/Sporty@2x.png') }}"
                                 alt="About-Us">
                         </div>
                     </div><!-- column end -->
@@ -674,7 +675,7 @@
                                 <a href="#"
                                     class="d-block hidden-box js-pointer-large js-animsition-link border-radius-10px ">
                                     <img class=""
-                                        src="{{ asset('assets/images/HS-Studios/1920x1080-red-solid-color-background.jpg') }}"
+                                        src="{{ asset('/storage/media/'.'HS-Studios/1920x1080-red-solid-color-background.jpg') }}"
                                         alt="Post">
                                     <!-- bg-overlay -->
                                     <h3 class="headline-xxxs pos-abs pos-center-center list list_margin-1px">
@@ -692,7 +693,7 @@
                             <div class="column-l-r-margin-10-999 hover-box pos-rel grow image-mobile">
                                 <a href="#"
                                     class="d-block hidden-box js-pointer-large js-animsition-link border-radius-10px">
-                                    <img src="{{ asset('assets/images/HS-Studios/1920x1080-red-solid-color-background.jpg') }}"
+                                    <img src="{{ asset('/storage/media/'.'HS-Studios/1920x1080-red-solid-color-background.jpg') }}"
                                         alt="Post">
                                     <!-- bg-overlay -->
                                     <h3 class="headline-xxxs pos-abs pos-center-center list list_margin-1px">
@@ -711,7 +712,7 @@
                                 <a href="#"
                                     class="d-block hidden-box js-pointer-large js-animsition-link border-radius-10px">
                                     <img class="img-hover-scale"
-                                        src="{{ asset('assets/images/HS-Studios/1920x1080-red-solid-color-background.jpg') }}"
+                                        src="{{ asset('/storage/media/'.'HS-Studios/1920x1080-red-solid-color-background.jpg') }}"
                                         alt="Post">
 
                                     <h3 class="headline-xxxs pos-abs pos-center-center  list list_margin-1px">
@@ -729,7 +730,7 @@
                             <div class="column-l-r-margin-10-999 hover-box pos-rel grow image-mobile">
                                 <a href="#"
                                     class="d-block hidden-box js-pointer-large js-animsition-link border-radius-10px">
-                                    <img src="{{ asset('assets/images/HS-Studios/1920x1080-red-solid-color-background.jpg') }}"
+                                    <img src="{{ asset('/storage/media/'.'HS-Studios/1920x1080-red-solid-color-background.jpg') }}"
                                         alt="Post">
                                     <h3 class="headline-xxxs pos-abs pos-center-center list list_margin-1px">
                                         <span class="list__item">
@@ -978,7 +979,7 @@
 
     <!-- footer start -->
     <footer class="fixed-footer pos-rel bg-img-cover js-fixed-footer"
-        style="background-image:url({{ asset('assets/images/Homepage/Sliders/1@2x.png') }})">
+        style="background-image:url({{ asset('/storage/media/'.'Homepage/Sliders/1@2x.png') }})">
         <!-- bg-overlay -->
         <div class="bg-overlay-black"></div>
         <!-- pos-rel start -->
@@ -1067,17 +1068,17 @@
                 <!-- footer-social start -->
                 <ul class="footer-social-desktop-hidden list list_center padding-top-90 padding-bottom-20">
                     <li class="list__item">
-                        <a href="#" class="flip-btn js-pointer-small" data-text="Facebook">Facebook</a>
+                        <a href="https://www.facebook.com/HotSportsng" class="flip-btn js-pointer-small" data-text="Facebook">Facebook</a>
                     </li>
 
                     <li class="list__item">
-                        <a href="#" class="flip-btn js-pointer-small" data-text="Instagram">Instagram</a>
+                        <a href="https://www.instagram.com/hotsportsng/" class="flip-btn js-pointer-small" data-text="Instagram">Instagram</a>
                     </li>
                     <li class="list__item">
-                        <a href="#" class="flip-btn js-pointer-small" data-text="Twitter">Twitter</a>
+                        <a href="https://www.youtube.com/@HotSportsNetwork" class="flip-btn js-pointer-small" data-text="Youtube">Youtube</a>
                     </li>
                     <li class="list__item">
-                        <a href="#" class="flip-btn js-pointer-small" data-text="LinkedIn">LinkedIn</a>
+                        <a href="https://chat.whatsapp.com/I8gPv0UXrdy2e1KDwbpHA5" class="flip-btn js-pointer-small" data-text="Whatsapp">Whatsapp</a>
                     </li>
                 </ul><!-- footer-social end -->
 

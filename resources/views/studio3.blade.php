@@ -10,10 +10,10 @@
 	<meta name="keywords" content="creative, modern, clean, html5, css3, portfolio, blog, agency, templates, minimal">
 
 	<!-- favicon -->
-	<link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}">
-	<link rel="apple-touch-icon" href="{{ asset('assets/images/apple-touch-icon-57x57.png') }}">
-	<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('assets/images/apple-touch-icon-72x72.png') }}">
-	<link rel="apple-touch-icon" sizes="114x114" href="{{ asset('assets/images/apple-touch-icon-114x114.png') }}">
+	<link rel="shortcut icon" href="{{ asset('/storage/media/'.'favicon.png') }}">
+	<link rel="apple-touch-icon" href="{{ asset('/storage/media/'.'apple-touch-icon-57x57.png') }}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('/storage/media/'.'apple-touch-icon-72x72.png') }}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ asset('/storage/media/'.'apple-touch-icon-114x114.png') }}">
 
 	<title>See Our Studios</title>
 
@@ -32,7 +32,7 @@
 <body class="preloader cursor-anim-enable dark-nav">
 	<!-- preloader-loading start -->
 	<div class="preloader__logoload-box">
-		<img class="preloader__logo vertical" src="{{ asset('assets/images/Homepage/Main Logos/HS Media Group@2x.png') }}" alt="logo">
+		<img class="preloader__logo vertical" src="{{ asset('/storage/media/'.'Homepage/Main Logos/HS Media Group@2x.png') }}" alt="logo">
 		<div class="preloader__pulse"></div>
 	</div><!-- preloader-loading end -->
 
@@ -64,8 +64,8 @@
 		<div class="header-logo js-midnight-color js-headroom">
 			<div class="hidden-box">
 				<a href="/" class="header-logo__box js-pointer-large js-animsition-link">
-					<img class="header-logo__img white" src="{{ asset('assets/images/logo/logo-white.png') }}" alt="logo">
-					<img class="header-logo__img black" src="{{ asset('assets/images/logo/logo-black.png') }}" alt="logo">
+					<img class="header-logo__img white" src="{{ asset('/storage/media/'.'logo/logo-white.png') }}" alt="logo">
+					<img class="header-logo__img black" src="{{ asset('/storage/media/'.'logo/logo-black.png') }}" alt="logo">
 				</a>
 			</div>
 		</div><!-- logo end -->
@@ -133,35 +133,35 @@
 					<!-- swiper-slide start -->
 					<div class="swiper-slide">
 						<div class="nav-slide-bg"
-							style="background-image:url({{ asset('assets/images/projects/speakers/revolt-BMest61rcqs-unsplash.jpg') }})">
+							style="background-image:url({{ asset('/storage/media/'.'projects/speakers/revolt-BMest61rcqs-unsplash.jpg') }})">
 						</div>
 						<div class="bg-overlay-black"></div>
 					</div><!-- swiper-slide end -->
 					<!-- swiper-slide start -->
 					<div class="swiper-slide">
 						<div class="nav-slide-bg"
-							style="background-image:url({{ asset('assets/images/projects/sneakers/revolt-164_6wVEHfI-unsplash.jpg') }})">
+							style="background-image:url({{ asset('/storage/media/'.'projects/sneakers/revolt-164_6wVEHfI-unsplash.jpg') }})">
 						</div>
 						<div class="bg-overlay-black"></div>
 					</div><!-- swiper-slide end -->
 					<!-- swiper-slide start -->
 					<div class="swiper-slide">
 						<div class="nav-slide-bg"
-							style="background-image:url({{ asset('assets/images/projects/black-bike/josh-nuttall-pIwu5XNvXpk-unsplash.jpg') }})">
+							style="background-image:url({{ asset('/storage/media/'.'projects/black-bike/josh-nuttall-pIwu5XNvXpk-unsplash.jpg') }})">
 						</div>
 						<div class="bg-overlay-black"></div>
 					</div><!-- swiper-slide end -->
 					<!-- swiper-slide start -->
 					<div class="swiper-slide">
 						<div class="nav-slide-bg"
-							style="background-image:url({{ asset('assets/images/projects/pexels/woman-in-black-sexy-top-2825034.jpg') }})">
+							style="background-image:url({{ asset('/storage/media/'.'projects/pexels/woman-in-black-sexy-top-2825034.jpg') }})">
 						</div>
 						<div class="bg-overlay-black"></div>
 					</div><!-- swiper-slide end -->
 					<!-- swiper-slide start -->
 					<div class="swiper-slide">
 						<div class="nav-slide-bg"
-							style="background-image:url({{ asset('assets/images/projects/furniture/goashape-RvyJGaoaWrs-unsplash.jpg') }})">
+							style="background-image:url({{ asset('/storage/media/'.'projects/furniture/goashape-RvyJGaoaWrs-unsplash.jpg') }})">
 						</div>
 						<div class="bg-overlay-black"></div>
 					</div><!-- swiper-slide end -->
@@ -255,7 +255,7 @@
 	<main class="js-animsition-overlay" data-animsition-overlay="true">
 		<!-- pos-rel start -->
 		<section id="up" class="pos-rel js-parallax-bg"
-			style="background-image:url({{ asset('assets/images/HS-Studios/Hero\ Image@2x.png') }})">
+			style="background-image:url({{ asset('/storage/media/'.'HS-Studios/Hero\ Image@2x.png') }})">
 			<!-- bg-overlay -->
 			<div class="bg-overlay-black"></div>
 			<!-- lines-container start -->
@@ -292,11 +292,11 @@
 
 					<!-- grid-item start -->
 					<div class="padding-top-40 grid-item-33-50-100 js-isotope-grid-item">
-						<a href="{{ asset('assets/images/HS-Studios/Photo Gallery/alex-mccarthy-U9uiPBfKY9I-unsplash@2x.png') }}"
+						<a href="{{ asset('/storage/media/'.'HS-Studios/Photo Gallery/alex-mccarthy-U9uiPBfKY9I-unsplash@2x.png') }}"
 							class="grid-margin-box js-photo-popup js-pointer-zoom">
 							<div class="anim-img-scale js-img-scale">
 								<img class="anim-img-scale__inner"
-									src="{{ asset('assets/images/HS-Studios/Photo Gallery/alex-mccarthy-U9uiPBfKY9I-unsplash@2x.png') }}"
+									src="{{ asset('/storage/media/'.'HS-Studios/Photo Gallery/alex-mccarthy-U9uiPBfKY9I-unsplash@2x.png') }}"
 									alt="Studio Images">
 							</div>
 						</a>
@@ -304,11 +304,11 @@
 
 					<!-- grid-item start -->
 					<div class="padding-top-40 grid-item-33-50-100 js-isotope-grid-item">
-						<a href="{{ asset('assets/images/HS-Studios/Photo Gallery/john-benitez-2zFaN2YsGN8-unsplash@2x.png') }}"
+						<a href="{{ asset('/storage/media/'.'HS-Studios/Photo Gallery/john-benitez-2zFaN2YsGN8-unsplash@2x.png') }}"
 							class="grid-margin-box js-photo-popup js-pointer-zoom">
 							<div class="anim-img-scale js-img-scale">
 								<img class="anim-img-scale__inner"
-									src="{{ asset('assets/images/HS-Studios/Photo Gallery/john-benitez-2zFaN2YsGN8-unsplash@2x.png') }}"
+									src="{{ asset('/storage/media/'.'HS-Studios/Photo Gallery/john-benitez-2zFaN2YsGN8-unsplash@2x.png') }}"
 									alt="Studio Images">
 
 							</div>
@@ -317,11 +317,11 @@
 
 					<!-- grid-item start -->
 					<div class="padding-top-40 grid-item-33-50-100 js-isotope-grid-item">
-						<a href="{{ asset('assets/images/HS-Studios/Photo Gallery/kate-oseen-XqLQxSUuEXQ-unsplash@2x.png') }}"
+						<a href="{{ asset('/storage/media/'.'HS-Studios/Photo Gallery/kate-oseen-XqLQxSUuEXQ-unsplash@2x.png') }}"
 							class="grid-margin-box js-photo-popup js-pointer-zoom">
 							<div class="anim-img-scale js-img-scale">
 								<img class="anim-img-scale__inner"
-									src="{{ asset('assets/images/HS-Studios/Photo Gallery/kate-oseen-XqLQxSUuEXQ-unsplash@2x.png') }}"
+									src="{{ asset('/storage/media/'.'HS-Studios/Photo Gallery/kate-oseen-XqLQxSUuEXQ-unsplash@2x.png') }}"
 									alt="Studio Images">
 
 							</div>
@@ -330,11 +330,11 @@
 
 					<!-- grid-item start -->
 					<div class="padding-top-40 grid-item-33-50-100 js-isotope-grid-item margin-top-30">
-						<a href=" {{ asset('assets/images/HS-Studios/Photo Gallery/joshua-hanson-73ctnpVWJio-unsplash@2x.png') }}"
+						<a href=" {{ asset('/storage/media/'.'HS-Studios/Photo Gallery/joshua-hanson-73ctnpVWJio-unsplash@2x.png') }}"
 							class="grid-margin-box js-photo-popup js-pointer-zoom">
 							<div class="anim-img-scale js-img-scale">
 								<img class="anim-img-scale__inner"
-									src="{{ asset('assets/images/HS-Studios/Photo Gallery/joshua-hanson-73ctnpVWJio-unsplash@2x.png') }}"
+									src="{{ asset('/storage/media/'.'HS-Studios/Photo Gallery/joshua-hanson-73ctnpVWJio-unsplash@2x.png') }}"
 									alt="Studio Images">
 							</div>
 						</a>
@@ -342,11 +342,11 @@
 
 					<!-- grid-item start -->
 					<div class="padding-top-40 grid-item-33-50-100 js-isotope-grid-item margin-top-30">
-						<a href="{{ asset('assets/images/HS-Studios/Photo Gallery/keagan-henman-pPxJTtxfV1A-unsplash@2x.png') }}"
+						<a href="{{ asset('/storage/media/'.'HS-Studios/Photo Gallery/keagan-henman-pPxJTtxfV1A-unsplash@2x.png') }}"
 							class="grid-margin-box js-photo-popup js-pointer-zoom">
 							<div class="anim-img-scale js-img-scale">
 								<img class="anim-img-scale__inner"
-									src="{{ asset('assets/images/HS-Studios/Photo Gallery/keagan-henman-pPxJTtxfV1A-unsplash@2x.png') }}"
+									src="{{ asset('/storage/media/'.'HS-Studios/Photo Gallery/keagan-henman-pPxJTtxfV1A-unsplash@2x.png') }}"
 									alt="Studio Images">
 							</div>
 						</a>
@@ -354,11 +354,11 @@
 
 					<!-- grid-item start -->
 					<div class="padding-top-40 grid-item-33-50-100 js-isotope-grid-item margin-top-30">
-						<a href="{{ asset('assets/images/Studios/5.png') }}"
+						<a href="{{ asset('/storage/media/'.'Studios/5.png') }}"
 							class="grid-margin-box js-photo-popup js-pointer-zoom">
 							<div class="anim-img-scale js-img-scale">
 								<img class="anim-img-scale__inner"
-									src="{{ asset('assets/images/Studios/5.png') }}"
+									src="{{ asset('/storage/media/'.'Studios/5.png') }}"
 									alt="Studio Images">
 							</div>
 						</a>
@@ -367,11 +367,11 @@
 					
 					<!-- grid-item start -->
 					<div class="padding-top-40 grid-item-33-50-100 js-isotope-grid-item margin-top-30">
-						<a href="{{ asset('assets/images/Studios/6.png') }}"
+						<a href="{{ asset('/storage/media/'.'Studios/6.png') }}"
 							class="grid-margin-box js-photo-popup js-pointer-zoom">
 							<div class="anim-img-scale js-img-scale">
 								<img class="anim-img-scale__inner"
-									src="{{ asset('assets/images/Studios/6.png') }}"
+									src="{{ asset('/storage/media/'.'Studios/6.png') }}"
 									alt="Studio Images">
 							</div>
 						</a>
@@ -379,11 +379,11 @@
 
 					<!-- grid-item start -->
 					<div class="padding-top-40 grid-item-33-50-100 js-isotope-grid-item margin-top-30">
-						<a href="{{ asset('assets/images/Studios/8.png') }}"
+						<a href="{{ asset('/storage/media/'.'Studios/8.png') }}"
 							class="grid-margin-box js-photo-popup js-pointer-zoom">
 							<div class="anim-img-scale js-img-scale">
 								<img class="anim-img-scale__inner"
-									src="{{ asset('assets/images/Studios/8.png') }}"
+									src="{{ asset('/storage/media/'.'Studios/8.png') }}"
 									alt="Studio Images">
 							</div>
 						</a>
@@ -391,11 +391,11 @@
 
 					<!-- grid-item start -->
 					<div class="padding-top-40 grid-item-33-50-100 js-isotope-grid-item margin-top-30">
-						<a href="{{ asset('assets/images/Studios/7.png') }}"
+						<a href="{{ asset('/storage/media/'.'Studios/7.png') }}"
 							class="grid-margin-box js-photo-popup js-pointer-zoom">
 							<div class="anim-img-scale js-img-scale">
 								<img class="anim-img-scale__inner"
-									src="{{ asset('assets/images/Studios/7.png') }}"
+									src="{{ asset('/storage/media/'.'Studios/7.png') }}"
 									alt="Studio Images">
 							</div>
 						</a>
@@ -418,11 +418,11 @@
 
 						<!-- grid-item start -->
 						<div class="padding-top-40 grid-item-33-50-100 js-isotope-grid-item margin-top-30">
-							<a href="{{ asset('assets/images/Studios/5.png') }}"
+							<a href="{{ asset('/storage/media/'.'Studios/5.png') }}"
 								class="grid-margin-box js-photo-popup js-pointer-zoom">
 								<div class="anim-img-scale js-img-scale">
 									<img class="anim-img-scale__inner"
-										src="{{ asset('assets/images/Studios/9.png') }}"
+										src="{{ asset('/storage/media/'.'Studios/9.png') }}"
 										alt="Studio Images">
 								</div>
 							</a>
@@ -431,11 +431,11 @@
 						
 						<!-- grid-item start -->
 						<div class="padding-top-40 grid-item-33-50-100 js-isotope-grid-item margin-top-30">
-							<a href="{{ asset('assets/images/Studios/6.png') }}"
+							<a href="{{ asset('/storage/media/'.'Studios/6.png') }}"
 								class="grid-margin-box js-photo-popup js-pointer-zoom">
 								<div class="anim-img-scale js-img-scale">
 									<img class="anim-img-scale__inner"
-										src="{{ asset('assets/images/Studios/10.png') }}"
+										src="{{ asset('/storage/media/'.'Studios/10.png') }}"
 										alt="Studio Images">
 								</div>
 							</a>
@@ -443,11 +443,11 @@
 	
 						<!-- grid-item start -->
 						<div class="padding-top-40 grid-item-33-50-100 js-isotope-grid-item margin-top-30">
-							<a href="{{ asset('assets/images/Studios/8.png') }}"
+							<a href="{{ asset('/storage/media/'.'Studios/8.png') }}"
 								class="grid-margin-box js-photo-popup js-pointer-zoom">
 								<div class="anim-img-scale js-img-scale">
 									<img class="anim-img-scale__inner"
-										src="{{ asset('assets/images/Studios/11.png') }}"
+										src="{{ asset('/storage/media/'.'Studios/11.png') }}"
 										alt="Studio Images">
 								</div>
 							</a>
