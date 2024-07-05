@@ -852,6 +852,58 @@
             </div>
         </div>
 
+        <style>
+			.whatsapp-float {
+				position: fixed;
+				width: 60px;
+				height: 60px;
+				bottom: 40px;
+				right: 40px;
+				background-color: #25d366;
+				color: #FFF;
+				border-radius: 50px;
+				text-align: center;
+				font-size: 30px;
+				box-shadow: 2px 2px 3px #999;
+				z-index: 100;
+				transition: transform 0.3s;
+			}
+	
+			.whatsapp-float:hover {
+				transform: scale(1.1);
+			}
+	
+			.whatsapp-icon {
+				margin-top: 16px;
+			}
+	
+			@keyframes pulse {
+				0% {
+					transform: scale(0.95);
+					box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+				}
+	
+				70% {
+					transform: scale(1);
+					box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+				}
+	
+				100% {
+					transform: scale(0.95);
+					box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+				}
+			}
+	
+			.whatsapp-float {
+				animation: pulse 2s infinite;
+			}
+		</style>
+
+		<a  href="https://wa.link/jnt7oz" class="whatsapp-float" target="_blank">
+			<i class="fab fa-whatsapp whatsapp-icon"></i>
+		</a>
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
     </main><!-- main end -->
 
 
