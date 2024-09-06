@@ -338,6 +338,8 @@
                     </div><!-- content end -->
                 </div><!-- swiper-slide end -->
 
+
+{{-- 
                 <!-- swiper-slide start -->
                 <div class="swiper-slide">
                     <!-- slide-bg -->
@@ -379,6 +381,8 @@
                     </div><!-- content end -->
                 </div><!-- swiper-slide end -->
 
+
+ --}}
                 <!-- swiper-slide start -->
                 <div class="swiper-slide">
                     <!-- slide-bg -->
@@ -534,7 +538,7 @@
                     <!-- flex-container start -->
                     <div class="flex-container margin-top-bottom-30">
                         <!-- blog-entry start -->
-                        <article class="four-columns column-100-100  js-scrollanim">
+                        <article class="six-columns column-100-100  js-scrollanim">
                             <div class="column-l-r-margin-10-999 hover-box pos-rel">
                                 <a href="Hsmedia" class="d-block hidden-box js-pointer-large js-animsition-link">
                                     <img class="img-hover-scale img-hover-opacity"
@@ -565,6 +569,7 @@
                         </article>
                         <!-- blog-entry end -->
 
+{{-- 
                         <!-- blog-entry start -->
                         <article class="four-columns column-100-100  js-scrollanim">
                             <div class="column-l-r-margin-10-999 hover-box pos-rel">
@@ -611,8 +616,10 @@
                             </div>
                         </article><!-- blog-entry end -->
 
+ --}}
+
                         <!-- blog-entry start -->
-                        <article class="four-columns column-100-100  js-scrollanim">
+                        <article class="six-columns column-100-100  js-scrollanim">
                             <div class="column-l-r-margin-10-999 hover-box pos-rel">
                                 <a href="Primedia" class="d-block hidden-box js-pointer-large js-animsition-link">
                                     <img class="img-hover-scale img-hover-opacity"

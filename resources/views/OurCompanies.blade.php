@@ -155,10 +155,10 @@
 						<!-- flex-container start -->
 						<div class="flex-container">
 							<!-- blog-entry start -->
-							<article class="four-columns  js-scrollanim">
+							<article class="six-columns  js-scrollanim">
 								<div class="hover-box pos-rel">
 									<a href="Hsmedia" class="d-block hidden-box js-pointer-large js-animsition-link">
-										<img class="img-hover-scale portfolio-column-img img-hover-opacity" src="{{ asset('/storage/media/'.'Our Companies/hs-studios.jpg') }}" alt="About Image">
+										<img class="img-hover-scale portfolio-column-img img-hover-opacity" style="width: 110%;" src="{{ asset('/storage/media/'.'Our Companies/hs-studios.jpg') }}" alt="About Image">
 										<!-- bg-overlay -->
 										<!-- <div class="bg-overlay-black"></div> -->
 										<h3 class="  headline-sm pos-abs pos-left-bottom list list_margin-1px hover-move-up">
@@ -178,6 +178,8 @@
 								</div>
 							</article><!-- blog-entry end -->
 
+
+{{-- 
 							<!-- blog-entry start -->
 							<article class="four-columns  js-scrollanim">
 								<div class=" hover-box pos-rel">
@@ -217,8 +219,10 @@
 								</div>
 							</article><!-- blog-entry end -->
 
+ --}}
+
 							<!-- blog-entry start -->
-							<article class="four-columns js-scrollanim">
+							<article class="six-columns js-scrollanim">
 								<div class="hover-box pos-rel">
 									<a href="Primedia" class="d-block hidden-box js-pointer-large js-animsition-link">
 										<img class="img-hover-scale portfolio-column-img img-hover-opacity" style="width: 110%;" src="{{ asset('/storage/media/'.'Our Companies/Primedia.jpg') }}" alt="About Image">
