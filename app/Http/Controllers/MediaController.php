@@ -17,7 +17,7 @@ class MediaController extends Controller
         $HomePage =Media::where('page','Homepage')->get();
         $HotSports =Media::where('page','HotSports')->get();
         $HSStudios =Media::where('page','HS-Studios')->get();
-        $OurCompanies =Media::where('page','Our Companies')->get();
+        $OurCompanies =Media::where('page','Our Studios')->get();
         $Primedia =Media::where('page','Primedia')->get();
         $Studios =Media::where('page','Studios')->get();
         $TeamPage =Media::where('page','Team-Page')->get();

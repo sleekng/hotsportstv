@@ -91,7 +91,7 @@
                         <option value="Homepage">Home Page</option>
                         <option value="HotSports">HotSports</option>
                         <option value="HS-Studios">HS-Studios</option>
-                        <option value="Our Companies">Our Companies</option>
+                        <option value="Our Studios">Our Studios</option>
                         <option value="Primedia">Primedia</option>
                         <option value="Studios">Studios</option>
                         <option value="Team-Page">Team-Page</option>

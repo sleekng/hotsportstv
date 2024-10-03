@@ -179,7 +179,7 @@
                         </div>
                     </div>
 
-                    <div class="accordion-header">Our Companies</div>
+                    <div class="accordion-header">Our Studios</div>
                     <div class="accordion-content">
                         <div class="grid grid-cols-6 gap-4">
                             @foreach ($OurCompanies as $item)

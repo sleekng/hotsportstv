@@ -151,7 +151,7 @@
     <!-- preloader-loading start -->
     <div class="preloader__logoload-box">
         <img class="preloader__logo vertical"
-            src="{{ asset('/storage/media/'.'Homepage/Main Logos/HS Media Group@2x.png') }}" alt="logo">
+            src="{{ asset('/storage/media/'.'Homepage/Main Logos/HS Studios.png') }}" alt="logo">
         <div class="preloader__pulse"></div>
     </div><!-- preloader-loading end -->
 
@@ -308,8 +308,8 @@
 
                 <!-- nav-btn-box start -->
                 <li class="nav-btn-box">
-                    <a href="Our-Companies" class="nav-btn large  js-pointer-large">
-                        <span class="nav-btn__inner" data-text="Our-Companies">Our Companies</span>
+                    <a href="Our-Studios" class="nav-btn large  js-pointer-large">
+                        <span class="nav-btn__inner" data-text="Our-Studios">Our Studios</span>
                     </a>
                 </li><!-- nav-btn-box end -->
 
@@ -363,12 +363,8 @@
                         <div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Phone</div>
                     </div>
                     <div class="nav-fade-anim js-nav-anim margin-top-10">
-                        <a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">+234
-                            803 0945
-                            660</a><br>
-                        <a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">+234
-                            809 7869
-                            971</a>
+                        <a href="tel:+234 707 316 4361" class="subhead-xxs text-color-white text-hover-to-white">+234 707 316 4361</a><br>
+                        <a href="tel:+234 807 619 4584" class="subhead-xxs text-color-white text-hover-to-white">+234 807 619 4584</a>
                     </div>
                 </div><!-- nav-phone end -->
             </div><!-- nav-information end -->
@@ -376,7 +372,7 @@
             <!-- nav-copyright start -->
             <div class="nav-copyright text-right">
                 <p class="copyright-style nav-fade-anim js-nav-anim">
-                    &copy; Copyright 2021 HS Group. <a href="#" class="text-weight-700 js-pointer-small"></a>
+                    &copy; Copyright 2024 HS Studios. <a href="#" class="text-weight-700 js-pointer-small"></a>
                 </p>
             </div><!-- nav-copyright end -->
         </div><!-- pos-rel end -->

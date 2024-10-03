@@ -82,9 +82,9 @@ Route::get('/Hsmedia', function () {
 })->name('Hsmedia');
 
 
-Route::get('/Our-Companies', function () {
+Route::get('/Our-Studios', function () {
     return view('OurCompanies');
-})->name('Our-Companies');
+})->name('Our-Studios');
 
 
 Route::get('/Primedia', function () {

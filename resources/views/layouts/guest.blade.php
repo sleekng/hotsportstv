@@ -189,8 +189,8 @@
 
                 <!-- nav-btn-box start -->
                 <li class="nav-btn-box">
-                    <a href="Our-Companies" class="nav-btn large  js-pointer-large">
-                        <span class="nav-btn__inner" data-text="Our-Companies">Our Companies</span>
+                    <a href="Our-Studios" class="nav-btn large  js-pointer-large">
+                        <span class="nav-btn__inner" data-text="Our-Studios">Our Studios</span>
                     </a>
                 </li><!-- nav-btn-box end -->
 

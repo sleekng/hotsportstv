@@ -14,7 +14,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('/storage/media/' . 'apple-touch-icon-72x72.png') }}">
     <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('/storage/media/' . 'apple-touch-icon-114x114.png') }}">
 
-    <title>HS MEDIA GROUP</title>
+    <title>HS STUDIOS</title>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +33,7 @@
 <body class="preloader cursor-anim-enable dark-nav">
     <!-- preloader-loading start -->
     <div class="preloader__logoload-box">
-        <img class="preloader__logo" src="{{ asset('/storage/media/' . 'Homepage/Main Logos/HS Media Group.png') }}"
+        <img class="preloader__logo" src="{{ asset('/storage/media/' . 'Homepage/Main Logos/HS Studios.png') }}"
             alt="logo">
         <div class="preloader__pulse"></div>
     </div><!-- preloader-loading end -->
@@ -68,7 +68,7 @@
                 <a href="/" class="header-logo__box  js-pointer-large js-animsition-link">
                     <img class="header-logo__img white margin-left-10 margin-right-20 margin-bottom-20"
                         style="width: 90%;"
-                        src="{{ asset('/storage/media/' . 'Homepage/Main Logos/HS Media Group@2x.png') }}" alt="logo">
+                        src="{{ asset('/storage/media/' . 'Homepage/Main Logos/HS Studios.png') }}" alt="logo">
                 </a>
             </div>
         </div><!-- logo end -->
@@ -88,28 +88,28 @@
             <ul class="list list_center list_margin-20px hidden-box">
                 <li class="list__item">
                     <div class="hidden-box d-inline-block">
-                        <a href="#" class="anim-slide js-pointer-small">
+                        <a href="https://www.facebook.com/hsstudiosng" target="_blank" class="anim-slide js-pointer-small">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </div>
                 </li>
                 <li class="list__item">
                     <div class="hidden-box d-inline-block">
-                        <a href="#" class="anim-slide tr-delay-02 js-pointer-small">
-                            <i class="fab fa-twitter fa-lg"></i>
+                        <a href="https://youtube.com/@hsstudios-zy6yc?si=jglRYvKG3kmFE7FY" target="_blank" class="anim-slide tr-delay-02 js-pointer-small">
+                            <i class="fab fa-youtube fa-lg"></i>
                         </a>
                     </div>
                 </li>
                 <li class="list__item">
                     <div class="hidden-box d-inline-block">
-                        <a href="#" class="anim-slide tr-delay-04 js-pointer-small">
+                        <a href="https://www.instagram.com/hsstudiosng/" target="_blank" class="anim-slide tr-delay-04 js-pointer-small">
                             <i class="fab fa-instagram fa-2x"></i>
                         </a>
                     </div>
                 </li>
                 <li class="list__item">
                     <div class="hidden-box d-inline-block">
-                        <a href="#" class="anim-slide tr-delay-06 js-pointer-small">
+                        <a href="https://www.linkedin.com/in/hs-studios-6ba06812a/" target="_blank" class="anim-slide tr-delay-06 js-pointer-small">
                             <i class="fab fa-linkedin"></i>
                         </a>
                     </div>
@@ -189,8 +189,8 @@
 
                 <!-- nav-btn-box start -->
                 <li class="nav-btn-box">
-                    <a href="Our-Companies" class="nav-btn large  js-pointer-large">
-                        <span class="nav-btn__inner" data-text="Our-Companies">Our Companies</span>
+                    <a href="Our-Studios" class="nav-btn large  js-pointer-large">
+                        <span class="nav-btn__inner" data-text="Our-Studios">Our Studios</span>
                     </a>
                 </li><!-- nav-btn-box end -->
 
@@ -244,12 +244,8 @@
                         <div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Phone</div>
                     </div>
                     <div class="nav-fade-anim js-nav-anim margin-top-10">
-                        <a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">+234
-                            803 0945
-                            660</a><br>
-                        <a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">+234
-                            809 7869
-                            971</a>
+                        <a href="tel:+234 707 316 4361" class="subhead-xxs text-color-white text-hover-to-white">+234 707 316 4361</a><br>
+                        <a href="tel:+234 807 619 4584" class="subhead-xxs text-color-white text-hover-to-white">+234 807 619 4584</a>
                     </div>
                 </div><!-- nav-phone end -->
             </div><!-- nav-information end -->
@@ -257,7 +253,7 @@
             <!-- nav-copyright start -->
             <div class="nav-copyright text-right">
                 <p class="copyright-style nav-fade-anim js-nav-anim">
-                    &copy; Copyright 2021 HS Group. <a href="#" class="text-weight-700 js-pointer-small"></a>
+                    &copy; Copyright 2024 HS Studios. <a href="#" class="text-weight-700 js-pointer-small"></a>
                 </p>
             </div><!-- nav-copyright end -->
         </div><!-- pos-rel end -->
@@ -293,8 +289,8 @@
                                 </span>
                             </h2>
                             <div class="margin-top-30 anim-fade tr-delay-08">
-                                <a href="Our-Companies" class="ellipse-btn ellipse-btn_red js-pointer-large">
-                                    <span class="#">Our Companies <i class="fa fa-chevron-right"
+                                <a href="Our-Studios" class="ellipse-btn ellipse-btn_red js-pointer-large">
+                                    <span class="#">Our Studios <i class="fa fa-chevron-right"
                                             aria-hidden="true"></i></span>
                                 </a>
                             </div>
@@ -384,7 +380,8 @@
 
  --}}
                 <!-- swiper-slide start -->
-                <div class="swiper-slide">
+
+                {{-- <div class="swiper-slide">
                     <!-- slide-bg -->
                     <div class="js-parallax-slide-bg bg-img-cover"
                         style="background-image:url({{ asset('/storage/media/' . 'Homepage/Sliders/4@2x.png') }})">
@@ -413,8 +410,12 @@
                             </div>
                         </div>
                     </div><!-- content end -->
-                </div><!-- swiper-slide end -->
-            </div><!-- swiper-wrapper end -->
+                </div> --}}
+                
+                <!-- swiper-slide end -->
+            </div>
+            
+            <!-- swiper-wrapper end -->
 
             <!-- swiper-button-prev start -->
             <div class="swiper-button-prev-box fullscreen-slider-arrow after-preloader-anim">
@@ -531,7 +532,7 @@
                     <!-- title start -->
                     <h2 class="headline-l text-center hidden-box padding-bottom-20 text-color-red">
                         <span class="anim-slide js-scrollanim">
-                            Our-Companies
+                            Our-Studios
                         </span>
                     </h2><!-- title end -->
 
@@ -956,9 +957,8 @@
                                     Us</a>
                             </li>
                             <li>
-                                <a href="Our-Companies"
-                                    class="footer-nav__btn js-pointer-small js-footer-hover-link subhead-l">Our
-                                    Companies</a>
+                                <a href="Our-Studios"
+                                    class="footer-nav__btn js-pointer-small js-footer-hover-link subhead-l">Our Studios</a>
                             </li>
                             <li>
                                 <a href="/blog"
@@ -1002,12 +1002,8 @@
                         <div class="column-l-r-margin-10">
                             <div class="headline-xxxxs">Phone</div>
                             <div class="margin-top-10">
-                                <a href="#" class="subhead-xxs text-color-white text-hover-to-white">+234 803
-                                    0945
-                                    660</a><br>
-                                <a href="#" class="subhead-xxs text-color-white text-hover-to-white">+234 809
-                                    7869
-                                    971</a>
+                                <a href="tel:+234 707 316 4361" class="subhead-xxs text-color-white text-hover-to-white">+234 707 316 4361</a><br>
+                                <a href="tel:+234 807 619 4584" class="subhead-xxs text-color-white text-hover-to-white">+234 807 619 4584</a>
                             </div>
                         </div>
                     </div><!-- column end -->
@@ -1016,24 +1012,24 @@
                 <!-- footer-social start -->
                 <ul class="footer-social-desktop-hidden list list_center padding-top-90 padding-bottom-20">
                     <li class="list__item">
-                        <a href="#" class="flip-btn js-pointer-small" data-text="Facebook">Facebook</a>
+                        <a href="https://www.facebook.com/hsstudiosng" class="flip-btn js-pointer-small" data-text="Facebook">Facebook</a>
                     </li>
 
                     <li class="list__item">
-                        <a href="#" class="flip-btn js-pointer-small" data-text="Instagram">Instagram</a>
+                        <a href="https://www.instagram.com/hsstudiosng/" class="flip-btn js-pointer-small" data-text="Instagram">Instagram</a>
                     </li>
                     <li class="list__item">
-                        <a href="#" class="flip-btn js-pointer-small" data-text="Twitter">Twitter</a>
+                        <a href="https://youtube.com/@hsstudios-zy6yc?si=jglRYvKG3kmFE7FY" class="flip-btn js-pointer-small" data-text="Twitter">Youtube</a>
                     </li>
                     <li class="list__item">
-                        <a href="#" class="flip-btn js-pointer-small" data-text="LinkedIn">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/hs-studios-6ba06812a/" class="flip-btn js-pointer-small" data-text="LinkedIn">LinkedIn</a>
                     </li>
                 </ul><!-- footer-social end -->
 
                 <!-- footer-copyright start -->
                 <div class="footer-copyright text-center pos-abs pos-bottom-center">
                     <p class="copyright-style">
-                        &copy; Copyright 2021 HS MEDIA GROUP.<a href="#"
+                        &copy; Copyright 2024 HS Studios.<a href="#"
                             class="text-weight-700 js-pointer-small"></a>
                     </p>
                     <p class="copyright-style">
